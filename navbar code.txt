@@ -1,0 +1,45 @@
+Source Code: 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Navigation Bar with Auto-focus Effect</title> 
+<style> 
+    /* CSS Styles */     nav { 
+        background-color: #333; 
+    } 
+ 
+    nav ul { 
+        list-style-type: none;         margin: 0;         padding: 0; 
+    } 
+ 
+    nav li {         display: inline; 
+    } 
+ 
+    nav a {         display: block;         padding: 15px 20px;         color: white;         text-decoration: none; 
+        transition: background-color 0.3s, color 0.3s; 
+    } 
+nav a:hover,     nav a:focus {         background-color: #555;         color: #fff; 
+    } 
+    /* Optional JavaScript */ 
+    /*  
+    var path = window.location.pathname;     var navLinks = document.querySelectorAll('nav a');     navLinks.forEach(function(link) {         if (link.getAttribute('href') === path) {             link.classList.add('active'); 
+        } 
+    }); 
+    */ 
+</style> </head> 
+<body> 
+ 
+<!-- HTML Structure --> 
+<nav> 
+    <ul> 
+        <li><a href="#">Home</a></li> 
+        <li><a href="#">About</a></li> 
+        <li><a href="#">Services</a></li> 
+        <li><a href="#">Contact</a></li> 
+    </ul> 
+</nav> 
+</body> 
+</html> 
+ 
